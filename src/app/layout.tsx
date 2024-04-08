@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Overpass } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar/page";
 
 const overpass = Overpass({ subsets: ["latin"] });
 
@@ -16,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={overpass.className}>{children}</body>
+      <body className={overpass.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

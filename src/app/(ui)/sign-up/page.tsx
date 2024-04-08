@@ -6,19 +6,19 @@ import Link from "next/link";
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   const handleSignUp = () => {
     console.log("Signing up with:", email, password);
   };
 
-  const validatePassword = (password:any) => {
-   
+  const validatePassword = (password: any) => {
     return password.length >= 8;
   };
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="max-w-md w-full p-6 bg-white rounded shadow-lg">
+      <div className="max-w-md w-full p-8 bg-slate-100 rounded shadow-lg">
         <h2 className="text-2xl mb-4">Sign Up</h2>
         <div className="mb-4">
           <label className="block mb-2">Email:</label>
@@ -36,6 +36,15 @@ const SignUp = () => {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block mb-2">Confirm password:</label>
+          <input
+            className="border rounded w-full py-2 px-3"
+            type="password"
+            value={password}
+            onChange={(e) => setConfirmPassword(e.target.value)}
           />
         </div>
         {!validatePassword(password) && (

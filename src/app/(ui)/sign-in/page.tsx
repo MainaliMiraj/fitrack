@@ -12,8 +12,8 @@ const SignIn = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-slate-100">
-      <div className="max-w-md w-full p-6 bg-white rounded shadow-lg h-280">
+    <div className="flex justify-center items-center h-screen bg-white">
+      <div className="max-w-md w-full p-6 bg-slate-100 rounded shadow-lg h-280">
         <h2 className="text-2xl mb-4">Sign In</h2>
         <div className="mb-4">
           <label className="block mb-2">Email:</label>
@@ -44,6 +44,12 @@ const SignIn = () => {
             Forgot Password?
           </span>
         </Link>
+
+        <div className="flex items-center justify-center">
+          <div className="flex-grow border-b border-gray-300 mr-4"></div>
+          <span className="text-gray-500">or</span>
+          <div className="flex-grow border-b border-gray-300 ml-4"></div>
+        </div>
 
         <div className="flex items-center justify-center py-3 gap-1">
           Don&apos;t have an account?{" "}

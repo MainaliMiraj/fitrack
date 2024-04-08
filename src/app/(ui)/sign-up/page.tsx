@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -11,7 +12,7 @@ const SignUp = () => {
   };
 
   const validatePassword = (password:any) => {
-    // Implement password validation logic here
+   
     return password.length >= 8;
   };
 
@@ -51,6 +52,12 @@ const SignUp = () => {
         >
           Sign Up
         </button>
+        <div className="mt-2 flex justify-center gap-1 border-l-0">
+          <span>Already have an account?</span>
+          <Link href="/sign-in" className="hover:text-blue-700 hover:underline">
+            Sign in
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -39,6 +39,12 @@ const SignIn = () => {
         >
           Sign In
         </button>
+        <Link href="/forgot-password">
+          <span className="flex items-center justify-center mt-2 cursor-pointer hover:underline hover:text-blue-700">
+            Forgot Password?
+          </span>
+        </Link>
+
         <div className="flex items-center justify-center py-3 gap-1">
           Don&apos;t have an account?{" "}
           <Link href="/sign-up">

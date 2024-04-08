@@ -11,7 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         customGreen: "#009B7D",
-        customGreenSeconday:"#008269"
+        customGreenSecondary:"#008269"
          // Define custom color here
       },
       backgroundImage: {

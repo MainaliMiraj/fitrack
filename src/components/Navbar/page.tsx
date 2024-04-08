@@ -22,8 +22,8 @@ const Navbar = () => {
                 <li>Health & Fitness</li>
               </Link>
             </ul>
-            <button className="bg-customGreen px-4 py-2 text-white rounded-md transform active:scale-105 hover:bg-customGreenSeconday">
-              Sign in
+            <button className="bg-customGreen px-10 py-2 text-white rounded-md transform active:scale-105 hover:bg-customGreenSecondary">
+              <Link href='/sign-in'>Sign In</Link>
             </button>
           </div>
         </div>

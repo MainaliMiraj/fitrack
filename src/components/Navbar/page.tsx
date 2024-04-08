@@ -6,7 +6,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div>
-      <nav className="fixed w-full h-24 shadow-xl bg-slate-100">
+      <nav className="relative w-full h-24 shadow-xl bg-slate-100">
         <div className="flex justify-between items-center h-full w-full px-5 2xl:px-16">
           <Link href="/">
             {" "}
@@ -18,8 +18,8 @@ const Navbar = () => {
               <Link href="/exercise" className="hover:text-customGreen">
                 <li>Exercises</li>
               </Link>
-              <Link href="/exercise" className="hover:text-customGreen">
-                <li>Fitness Blog</li>
+              <Link href="/fitness-blog" className="hover:text-customGreen">
+                <li>Health & Fitness</li>
               </Link>
             </ul>
             <button className="bg-customGreen px-4 py-2 text-white rounded-md transform active:scale-105 hover:bg-customGreenSeconday">

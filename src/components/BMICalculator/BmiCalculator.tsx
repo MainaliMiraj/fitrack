@@ -19,7 +19,7 @@ const BmiCalculator = () => {
     if (bmi < 18.5) {
       return `You are underweight. Consider strength training exercises at least 3 times a week and have enough protein (Your weight in kg * 1.2) gm.`;
     } else if (bmi < 25) {
-      return "Your weight is normal. Keep up your health and eat healthy food and exercise more.";
+      return "Your weight is normal. Keep up your health and eat healthy food and exercise regularly.";
     } else if (bmi < 30) {
       return "You are overweight. Please check your daily calorie intake and try to consume 300-400 fewer calories than your maintenance calorie.";
     } else {
@@ -28,11 +28,11 @@ const BmiCalculator = () => {
   }
 
   return (
-    <div className="bg-gradient-to-b from-customGreen to-green-700 h-2/3 w-2/4 m-4 p-4 rounded-lg">
+    <div className="bg-gradient-to-b from-customGreen to-green-700 h-2/3 lg:h-full w-full lg:w-2/4 m-4 p-4 rounded-lg">
       <div className="text-white font-cbold text-3xl">Calculate your BMI</div>
       <div className="flex bg-transparent  h-2/3 flex-col items-center justify-center shadow-lg gap-y-6 w-full p-5  ">
         <div>
-          <span>Height:</span>
+          <span className="px-2 text-white">Height:</span>
           <input
             type="number"
             className="p-1.5"
@@ -45,7 +45,7 @@ const BmiCalculator = () => {
         </div>
 
         <div>
-          <span>Weight:</span>
+          <span className="px-2 text-white">Weight:</span>
           <input
             type="number"
             className="p-1.5"

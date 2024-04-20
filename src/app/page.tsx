@@ -1,6 +1,6 @@
 import BmiCalculator from "@/components/BMICalculator/BmiCalculator";
 import SearchExercise from "@/components/SearchExercise/SearchExercise";
-import ExerciseBox from "@/components/ExerciseBox/ExerciseBox";
+import ExerciseBox from "@/components/ExercisGrid/ExerciseGrid";
 
 export default function Home() {
   return (
